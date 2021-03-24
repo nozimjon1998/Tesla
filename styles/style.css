@@ -1,0 +1,248 @@
+*{
+    font-family: 'Roboto Condensed';
+}
+body,p {
+    margin: 0;
+}
+header {
+  /* height: 800px; */
+  position: relative;
+}
+header > .container {
+    position: relative;
+}
+.navigation{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo {
+    margin-top: 48px;
+}
+.tanirovka img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tanirovka{
+    height: 800px;
+}
+.tanirovka::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .3;
+}
+.me nu {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(5, 1, 1);
+    border: 1px solid #fff;
+    margin-top: 35px;
+    
+}
+.menu_button{
+    width: 35px;
+    margin-left: 12px;
+    border: 1px solid white;
+    margin-top: 12px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* .menu_button,
+.menu_button::before,
+.menu_button::after{
+    display: inline-block;
+    width: 36px;
+    background-color: #fff;
+    height: 2px;
+}
+.menu_button::before,
+.menu_button::after{
+    content: "";
+    position: absolute;
+}
+.menu_button::before{
+    top: 16px;
+
+}
+.menu_button::after{
+    bottom: 16px;
+} */
+
+.slider_item_content{
+    position: absolute;
+    top: 150px;
+    color: #fff;
+}
+.slider_item_content p:first-child{
+    font-size: 96px;
+}
+.slider_item_content p:nth-child(2){
+    font-size: 24px;
+    width: 284px;
+}
+.slider_item_content a {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #FFFFFF;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 55px;
+}
+.main_content{
+    background-color: #0B0B0B;
+    overflow: hidden;/*joyini topib beradi chekkalarini yoqotadi*/
+}
+.xarakterlar {
+    margin-top: 105px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.xarakter{
+   color: #fff;
+   text-align: center;
+}
+.xarakter p:first-child {
+    font-size: 24px;
+    margin-bottom: 39px;
+}
+.xarakter p:nth-child(2){
+    font-size: 96px;
+    position: relative;
+    margin-bottom: 28px;
+    white-space: nowrap;/*text sinib qolsa pastka tushib ketsa*/
+}
+.xarakter p:nth-child(2) > span {
+    font-size: 24px;
+    margin-left: -30px;
+}
+.xarakter p:nth-child(3) {
+    font-size: 24px;
+    color: #B70021;
+}
+.xarakter sup{
+    font-size: 24px;
+    position: absolute;
+    top: 45px;
+    right: 23px;
+}
+.tom, img{
+  /* width: 100%;
+  height: 400px; */
+  object-fit: cover;
+  margin-bottom: 100px;
+} 
+.speed{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.speed img{
+    width: 49%;
+    object-fit: cover;
+}
+.speed_content p:first-child {
+    font-size: 36px;
+    color: red;
+    margin-bottom: 101px;
+}
+.speed_content :last-child{
+    font-size: 24px;
+    color: #fff;
+}
+.benefits{
+    display: flex;
+    margin-bottom: 100px;
+}
+.benefits img{
+    width: 49%;
+    object-fit: cover;
+    margin-right: 58px;
+}
+.benefits_content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+}
+.benefits_content p:first-child {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 95px;;
+}
+.benefits p:last-child{
+    font-size: 24px;
+    color: red;
+    text-align: right;
+}
+.content_img2{
+    height: 600px;
+}
+.qwerty{
+    color: #fff;
+    display: inline-block;
+}
+.qwerty p:first-child{
+    color: red;
+}
+.qwerty p:last-child{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.qwerty .qwerty_a p{
+margin-left: 300px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #690102;
+    padding-top: 83px;
+    padding-bottom: 20px;
+}
+.wtd{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    width: 284px;
+    height: 86px;
+    margin-bottom: 83px;
+}
+.wtd:hover{
+    background-color: red;
+}
+.footer_links a{
+    color: #fff;
+    text-decoration: none;
+    justify-content: space-between;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.footer_links a::after{
+    content: '|';
+    margin-left: 14px;
+    margin-right: 14px;
+}
+.footer_links a:last-child::after{
+    display: none;
+}
